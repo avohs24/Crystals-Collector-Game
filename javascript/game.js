@@ -16,6 +16,8 @@ var purple;
 			green = (Math.floor(Math.random() * 11) + 1);
 			yellow = (Math.floor(Math.random() * 11) + 1);
 			purple = (Math.floor(Math.random() * 11) + 1);
+			yourNum = 0;
+			$("#yourNumber").html("<h2>Your Number is<h2>" + yourNum);
 		}
 			reset();		
 
