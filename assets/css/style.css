@@ -1,0 +1,26 @@
+#winningNum {
+	color: red;
+	text-align: center;
+}
+
+.panel-heading {
+	text-align: center;
+}
+
+#yourNumber {
+	text-align: center;
+}
+
+#number {
+	text-align: center;
+}
+
+body {
+	background: url(../pics/triangle.png);
+	font-family: 'Gochi Hand', cursive;
+
+}
+
+#winningNum {
+	border: solid red 5px;
+}
