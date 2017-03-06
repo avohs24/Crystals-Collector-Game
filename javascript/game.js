@@ -6,6 +6,7 @@ var blue;
 var green;
 var yellow;
 var purple;
+var audio = new Audio("../assets/sounds/gem_collection.wav");
 
 
 		function reset (){
@@ -28,6 +29,7 @@ var purple;
 			yourNum += blue;
 			$("#yourNumber").html("<h2>Your Number is<h2> " + yourNum);
 			winLoss();
+			audio.play();
 		}
 			$("#blueButton").click(blueNum);
 
