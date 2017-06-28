@@ -20,7 +20,7 @@ var audio = new Audio("../assets/sounds/gem_collection.wav");
 			yourNum = 0;
 			$("#yourNumber").html("<h2>Your Number is<h2>" + yourNum);
 		}
-			reset();		
+			reset();
 
 
 
@@ -39,7 +39,8 @@ var audio = new Audio("../assets/sounds/gem_collection.wav");
 			yourNum += green;
 			$("#yourNumber").html("<h2>Your Number is<h2> " + yourNum);
 			winLoss();
-		 } 
+			audio.play();
+		 }
 		$("#greenButton").click(greenNum);
 
 
@@ -49,6 +50,7 @@ var audio = new Audio("../assets/sounds/gem_collection.wav");
 			yourNum += yellow;
 			$("#yourNumber").html("<h2>Your Number is<h2> " + yourNum);
 			winLoss();
+			audio.play();
 		}
 		$("#yellowButton").click(yellowNum);
 
@@ -59,6 +61,7 @@ var audio = new Audio("../assets/sounds/gem_collection.wav");
 			yourNum += purple;
 			$("#yourNumber").html("<h2>Your Number is<h2> " + yourNum);
 			winLoss();
+			audio.play();
 		}
 		$("#purpleButton").click(purpleNum);
 
@@ -76,7 +79,7 @@ var audio = new Audio("../assets/sounds/gem_collection.wav");
 
 
 		}else if(yourNum === winNum){
-			
+
 
 			alert("You win!");
 			wins++;
